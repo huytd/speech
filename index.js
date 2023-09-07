@@ -6,6 +6,8 @@ const AudioBufferToWav = require('audiobuffer-to-wav');
 const randomText = require('./data');
 const fs = require('fs');
 const bodyParser = require('body-parser');
+const config = require('./config');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const upload = multer();
 
@@ -62,6 +64,26 @@ app.post('/api/process', upload.single('audio'), async (req, res) => {
   res.json(rec.finalResult(rec));
   rec.free();
 });
+
+
+app.use(
+  '/js/info.js', 
+  createProxyMiddleware({ 
+    target: config.TRACKER_DOMAIN, 
+    changeOrigin: true,
+    pathRewrite: { 
+      '^/js/info.js': config.TRACKER_SCRIPT 
+    } 
+  })
+);
+
+app.use(
+  '/api/event',
+  createProxyMiddleware({
+    target: config.TRACKER_DOMAIN,
+    changeOrigin: true
+  }),
+);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

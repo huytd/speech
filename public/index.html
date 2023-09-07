@@ -1,8 +1,6 @@
 <html>
   <head>
     <title>speechREC</title>
-    <script src="https://unpkg.com/vue@3.0.4"></script> 
-    <script src="WebAudioRecorder.min.js"></script> 
     <link href="style.css" rel="stylesheet"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -103,9 +101,13 @@
     </div>
     <div class="footer">
       <div class="content">
-      &copy; 2023, <a href="https://github.com/sequencegenius/">Sequence Genius</a>
+        built by <a href="https://twitter.com/huytd189">@huytd</a>, open sourced at <a target="_blank" href="https://github.com/huytd/speech">github</a>
       </div>
     </div>
+
+    <script src="/js/info.js"></script> 
+    <script src="https://unpkg.com/vue@3.0.4"></script> 
+    <script src="WebAudioRecorder.min.js"></script> 
     <script>
     const { createApp, ref, reactive } = Vue;
 

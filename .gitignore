@@ -3,3 +3,4 @@ node_modules
 fly.toml
 model
 .DS_Store
+config.js
