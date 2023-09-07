@@ -1,0 +1,5 @@
+.parcel-cache
+node_modules
+fly.toml
+model
+.DS_Store
