@@ -1,0 +1,17 @@
+[package]
+name = "speech-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = { version = "0.6.20", features = ["multipart"] }
+rand = "0.8.5"
+serde = { version = "1.0.188", features = ["derive"] }
+serde_json = "1.0.105"
+tokio = { version = "1.32.0", features = ["full"] }
+tower = { version = "0.4.13", features = ["util"] }
+tower-http = { version = "0.4.4", features = ["fs"] }
+vosk = "0.2.0"
+wav = "1.0.0"

@@ -1,0 +1,171 @@
+html, body {
+    background: #f7f1e3;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    color: #f7f1e3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #474787;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 14px;
+    color: #f2f2ff;
+    text-align: left;
+}
+
+#app {
+    flex: 1;
+}
+
+.content-section {
+    width: 100%;
+    background: #f7f1e3;
+    color: #84817a;
+}
+
+.content-section.highlight {
+    background: #fcfcfb;
+}
+
+.content-section h2 {
+    color: #84817a;
+}
+
+.header-section {
+    width: 100%;
+    background: #474787;
+}
+
+.content {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.header-section h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.app-section {
+    width: 100%;
+    background: #706fd3;
+    padding: 20px 0 0 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #40407a;
+    border-bottom: 2px solid #2c2c54;
+    color: #f7f1e3;
+    cursor: pointer;
+}
+
+.btn.inline {
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.btn:hover {
+    background: #474787;
+    border-color: #40407a;
+    color: #fff;
+}
+
+.btn svg {
+    margin-right: 4px;
+}
+
+.controllers {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.content-box {
+    padding: 20px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #f2f2ff;
+    justify-content: center;
+    border-radius: 6px;
+    color: #2c2c54;
+}
+
+.word {
+    padding: 4px 8px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    border-radius: 6px;
+    color: #FFF;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.word .score {
+    font-size: 0.75em;
+    opacity: 0.55;
+}
+
+.word:hover {
+    opacity: 0.9;
+}
+
+.word.good {
+    background: #20bf6b;
+}
+
+.word.average {
+    background: #f7b731;
+}
+
+.word.poor {
+    background: #fa8231;
+}
+
+.word.bad {
+    background: #eb3b5a;
+}
+
+.word-lookup input {
+    border: 1px solid #84817a;
+    border-radius: 6px;
+    margin-right: 6px;
+    padding: 4px 8px;
+}
+
+.word-lookup .result {
+    color: #ff793f;
+    padding-top: 4px;
+}
+
+.footer {
+    background: #d1ccc0;
+    color: #84817a;
+    text-align: center;
+}

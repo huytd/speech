@@ -1,0 +1,20 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "parcel build ./index.html --dist-dir ../public",
+    "dev": "parcel watch ./index.html --dist-dir ../public"
+  },
+  "author": "Huy Tran",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "parcel": "^2.9.3",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.9.3",
+    "@parcel/transformer-vue": "^2.9.3",
+    "@parcel/transformer-webmanifest": "^2.9.3"
+  }
+}

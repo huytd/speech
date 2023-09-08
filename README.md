@@ -10,8 +10,6 @@ As a non-native English speaker, I struggle with my pronunciation a lot. This is
 
 Or maybe it's just a good excuse for yet another side project.
 
-The code is horrible because it was hacked in a night, I have no excuse for that. I guess it can be improved later.
-
 ## How it works?
 
 Under the hood, **Speech** uses [Vosk](https://alphacephei.com/vosk/) – the speech recognition toolkit, to check your voice recording and figure out what you are trying to say.
@@ -22,12 +20,15 @@ The audio recording is done using the [Web Audio API](https://developer.mozilla.
 
 First, you need to download a Vosk model at https://alphacephei.com/vosk/models and extract it to the `model` folder in the source directory.
 
-Then do the thing most JavaScript devs do:
+Also, you will need to have `libvosk.so` or `libvosk.dylib` in your computer's library path. You can download it from the [vosk-api](https://github.com/alphacep/vosk-api/releases/tag/v0.3.42) repository, and copy the library file to somewhere like `/usr/local/lib`.
+
+Then you are ready to run the project:
 
 ```
-$ npm install
-$ npm run start
+$ cargo run
 ```
+
+The frontend will be built automatically using [Parcel](https://parceljs.org/), and the server will be started at `http://localhost:3000`.
 
 ## Acknowledge
 

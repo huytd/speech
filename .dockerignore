@@ -1,2 +1,4 @@
 .parcel-cache
 node_modules
+.idea
+target
