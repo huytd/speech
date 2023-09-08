@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "parcel build ./index.html --dist-dir ../public",
-    "dev": "parcel watch ./index.html --dist-dir ../public"
+    "dev": "parcel watch ./index.html --dist-dir ../public",
+    "build:docker": "parcel build ./index.html"
   },
   "author": "Huy Tran",
   "license": "BSD-3-Clause",
